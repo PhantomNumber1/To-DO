@@ -1,21 +1,67 @@
 body {
-  background-color: #99B2B7;
+  background-color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
-
+.todo {
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+  background-color: white;
+}
+.content{
+  border: 3px solid #0F2167;
+}.title{
+  border: 3px solid #0F2167;
+}
 section {
-  background-color: #D5DED9;
-  padding: 30px;
+  border: 5px solid #0F2167;
+  background-color: #4CB9E7;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 30px;  
   margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 50px 50px 50px;
   overflow: hidden;
 }
 section:nth-child(even) {
-  background-color: white;
+  background-color: #4CB9E7;
+}
+/* .child{
+  background-color: #dd6666;
+} */
+
+.child {
+  border: 5px solid #0F2167;
+  background-color: #FFECD6;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 30px;  
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 50px 50px 50px;
+  overflow: hidden;
+}
+.task-list {
+  border: 5px solid #0F2167;
+  background-color: #4CB9E7;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 30px;  
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 50px 50px 50px;
+  overflow: hidden;
+}
+
+section h2 {
+  font-weight: 200;
+  font-size: 2em;
+  margin: 0 0 0.5em;
+  color:  333333;
 }
 
 h1{
-    color:red;
+    font-size: 30px;
+    color:333333;
     padding:30px;
     text-align: center;
 }
@@ -24,16 +70,40 @@ h2 {
   font-weight: 200;
   font-size: 4em;
   margin: 0 0 0.5em;
-  color: #99B2B7;
+  color: #0F2167;
 }
 
-button {
-  border: 2px solid rgb(158, 183, 153);
+.add {
+  color: black;
+  border-radius: 20px;
+  border: 2px solid greenyellow;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;    
+  font-size: 1.25em;
+  margin-top: 20px;
+  margin-left: 2%;
+  text-transform: uppercase;
+  text-align: center;
+  float: right;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.remove:hover, .remove:focus {
+  background-color: red;
+  color: #D5DED9;
+}
+.remove {
+  border-radius: 20px;
+  border: 2px solid red;
   background-color: transparent;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 1.25em;
-  color: #99B2B7;
+  color: black;
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -44,26 +114,27 @@ button {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-button:hover, button:focus {
-  background-color: red;
-  color: #D5DED9;
+.add:hover, .add:focus {
+  background-color: greenyellow;
+  color: black;
 }
 
 label {
   font-weight: bold;
 }
 label span {
+  font-size: 20px;
   margin-bottom: 5px;
   display: block;
 }
 label span strong {
-  color: #dd6666;
+  color: red;
 }
 
 input {
   padding: 20px;
-  width: 100%;
-  border: 1px solid #99B2B7;
+  width: 90%;
+  border: 1px solid #3498db;
   border-radius: 0;
   font-size: 1em;
 }

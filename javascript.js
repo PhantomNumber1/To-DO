@@ -86,6 +86,8 @@ var saveTaskToStorage = function(title,content) {
 var loadTasksFromStorage = function() {
     let tasks = localStorage.getItem('tasks');
     tasks = JSON.parse(tasks);
+    taskList={};
+    clearAllTasks();
     tasks.forEach(function(task) {
         addTask(task.title, task.content);
     });
